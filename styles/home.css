@@ -1,0 +1,146 @@
+.hero_section {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 4rem;
+    background-color: var(--primary_colour);
+}
+
+.hero_section img {
+    flex: 1 1 0;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero_section img:nth-child(2) {
+    flex: 1.6 1 0;
+}
+
+@media only screen and (max-width: 865px) {
+    .hero_section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 4rem;
+    }
+
+    .hero_section img {
+        display: none;
+    }
+
+    .hero_section img:nth-child(2) {
+        display: block;
+        flex: 1;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    .book_section {
+        gap: 3rem;
+    }
+}
+
+.events_section {
+    padding: 2rem 6rem;
+    background-color: var(--primary_colour);
+    gap: 3rem;
+}
+
+.events_section > div {
+    flex: 1;
+}
+
+.events_section .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.events_section .left h2 {
+    color: var(--accent_colour);
+}
+
+.events_section .events_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.events_section .event {
+    background-color: var(--secondary_colour);
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    color: white;
+}
+
+.events_section .event:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.events_section .event .content {
+    gap: 0;
+    text-align: left;
+}
+
+.events_section .event .content h5 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.events_section .event .content p {
+    font-size: 16px;
+    color: white;
+}
+
+.events_section .event .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent_colour);
+    color: white;
+    padding: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+}
+
+.events_section .event .date h5 {
+    font-weight: 500;
+}
+
+.events_section .event .date h5:first-of-type {
+    font-size: 18px;
+}
+
+.events_section .event .date h5:last-of-type {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 865px) {
+    .events_section {
+        padding: 2rem;
+    }
+
+    .events_section .left {
+        align-items: center;
+    }
+}
+
+.about_section h1 {
+    font-size: 72px;
+    line-height: 0.8;
+}
+
+@media only screen and (max-width: 865px) {
+    .about_section {
+        padding: 4rem 2rem;
+    }
+}
