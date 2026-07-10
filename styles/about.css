@@ -1,0 +1,27 @@
+.about_section {
+    background-color: var(--primary_colour);
+}
+
+.about_section h1 {
+    font-size: 72px;
+}
+
+.about_section .socials {
+    display: flex;
+    gap: 10px;
+}
+
+.about_section .socials img {
+    height: 60px;
+}
+
+.about_section .socials img:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 865px) {
+    .about_section {
+        gap: 3rem;
+    }
+}

@@ -123,6 +123,15 @@ footer .socials {
     margin-top: 5px;
 }
 
+footer .socials img {
+    height: 40px;
+}
+
+footer .socials img:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
 footer .right {
     display: flex;
     align-items: center;
@@ -297,13 +306,13 @@ nav .links a {
 
 nav .links a.active {
     font-weight: 900;
+    text-decoration: underline;
 }
 
 nav .links a:hover {
-    text-decoration: underline;
     color: var(--secondary_colour);
-    transition: all 10s ease-in-out;
-    transform: scale(3.5);
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.1);
 }
 
 .mobile_nav {

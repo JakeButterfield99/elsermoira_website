@@ -36,6 +36,10 @@
     }
 }
 
+.book_section img {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
 @media only screen and (max-width: 865px) {
     .book_section {
         gap: 3rem;
@@ -83,6 +87,7 @@
 .events_section .event:hover {
     cursor: pointer;
     transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
 }
 
 .events_section .event .content {
