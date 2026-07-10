@@ -1,5 +1,10 @@
 .about_section {
     background-color: var(--primary_colour);
+    gap: 4rem;
+}
+
+.about_section .about_img {
+    height: 700px;
 }
 
 .about_section h1 {
