@@ -13,8 +13,12 @@
     display: block;
 }
 
-.hero_section img:nth-child(2) {
-    flex: 3;
+.hero_section img:nth-child(1) {
+    transform: rotate(-5deg);
+}
+
+.hero_section img:nth-child(3) {
+    transform: rotate(5deg);
 }
 
 @media only screen and (max-width: 865px) {
@@ -37,7 +41,9 @@
 }
 
 .book_section img {
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    height: 600px;
+    border-radius: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 865px) {
@@ -65,6 +71,12 @@
 
 .events_section .left h2 {
     color: var(--accent_colour);
+}
+
+.events_section .left img {
+    height: 400px;
+    transform: rotate(2deg);
+    margin-left: 30px;
 }
 
 .events_section .events_list {
@@ -142,6 +154,11 @@
 .about_section h1 {
     font-size: 72px;
     line-height: 0.8;
+}
+
+.about_section .polaroid {
+    height: 500px;
+    transform: rotate(2deg);
 }
 
 @media only screen and (max-width: 865px) {

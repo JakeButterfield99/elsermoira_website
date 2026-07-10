@@ -256,6 +256,11 @@ img {
     border-radius: 10px;
 }
 
+.greeting_img {
+    height: 80px;
+    align-self: flex-start;
+}
+
 .banner {
     display: flex;
     align-items: center;
@@ -264,6 +269,46 @@ img {
     color: white;
     padding: 20px;
     text-align: center;
+    gap: 50px;
+}
+
+.banner img {
+    height: 50px;
+    transform: scale(3);
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.banner img:first-of-type {
+    animation-name: banner-wobble-left;
+}
+
+.banner img:last-of-type {
+    animation-name: banner-wobble-right;
+    animation-duration: 2s;
+    animation-delay: -1s;
+}
+
+@keyframes banner-wobble-left {
+    0%,
+    100% {
+        transform: scale(3) rotate(0deg);
+    }
+    50% {
+        transform: scale(3) rotate(-10deg);
+    }
+}
+
+@keyframes banner-wobble-right {
+    0%,
+    100% {
+        transform: scale(3) rotate(0deg);
+    }
+    50% {
+        transform: scale(3) rotate(10deg);
+    }
 }
 
 @media only screen and (max-width: 865px) {
