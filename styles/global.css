@@ -76,6 +76,7 @@ a {
 html,
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -312,6 +313,10 @@ img {
 }
 
 @media only screen and (max-width: 865px) {
+    .banner {
+        gap: 20px;
+    }
+
     .banner h2 {
         font-size: 18px;
     }

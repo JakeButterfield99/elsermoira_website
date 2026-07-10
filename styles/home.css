@@ -149,6 +149,10 @@
     .events_section .left {
         align-items: center;
     }
+
+    .events_section .left img {
+        margin-left: 0;
+    }
 }
 
 .about_section h1 {
@@ -164,5 +168,11 @@
 @media only screen and (max-width: 865px) {
     .about_section {
         padding: 4rem 2rem;
+        gap: 30px;
+    }
+
+    .about_section .polaroid {
+        height: auto;
+        width: 100%;
     }
 }
