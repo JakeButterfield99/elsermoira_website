@@ -1,12 +1,13 @@
 .hero_section {
-    align-items: center;
-    gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+
     padding: 0 4rem;
+    gap: 4rem;
     background-color: var(--primary_colour);
 }
 
 .hero_section img {
-    flex: 2;
     width: 100%;
     height: auto;
     display: block;
