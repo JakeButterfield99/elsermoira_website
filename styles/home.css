@@ -76,6 +76,7 @@
 .events_section .left img {
     height: 400px;
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0;
 }
 
 .events_section .left .align {
