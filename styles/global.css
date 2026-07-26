@@ -248,6 +248,10 @@ button img {
     border-radius: 0;
 }
 
+button#goodreads {
+    background-color: #d4d0ba;
+}
+
 .shadow {
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 }
