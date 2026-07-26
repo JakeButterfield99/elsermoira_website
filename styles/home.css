@@ -14,11 +14,11 @@
 }
 
 .hero_section img:nth-child(1) {
-    transform: rotate(-5deg);
+    transform: rotate(-5deg) scale(0.85);
 }
 
 .hero_section img:nth-child(3) {
-    transform: rotate(5deg);
+    transform: rotate(5deg) scale(0.85);
 }
 
 @media only screen and (max-width: 865px) {
@@ -75,8 +75,26 @@
 
 .events_section .left img {
     height: 400px;
-    transform: rotate(2deg);
-    margin-left: 30px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.events_section .left .align {
+    display: flex;
+    gap: 20px;
+}
+
+.events_section .left .align p {
+    margin-bottom: 30px;
+}
+
+.events_section .left .align p:last-of-type {
+    margin: 0;
+}
+
+.events_section .left .align a {
+    color: var(--secondary_colour);
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 .events_section .events_list {
@@ -105,6 +123,11 @@
 .events_section .event .content {
     gap: 0;
     text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .events_section .event .content h5 {
@@ -124,26 +147,29 @@
     justify-content: center;
     background-color: var(--accent_colour);
     color: white;
-    padding: 10px;
-    aspect-ratio: 1/1;
+    width: 90px;
+    height: 90px;
     border-radius: 5px;
 }
 
 .events_section .event .date h5 {
     font-weight: 500;
+    font-size: 22px;
 }
 
-.events_section .event .date h5:first-of-type {
+.events_section .event .time h5 {
+    font-family: "Cloud Soft";
+    margin-right: 10px;
     font-size: 18px;
-}
-
-.events_section .event .date h5:last-of-type {
-    font-size: 25px;
 }
 
 @media only screen and (max-width: 865px) {
     .events_section {
-        padding: 2rem;
+        padding: 1rem;
+    }
+
+    .events_section .event {
+        width: calc(100% - 2rem);
     }
 
     .events_section .left {
@@ -151,7 +177,17 @@
     }
 
     .events_section .left img {
-        margin-left: 0;
+        display: none;
+    }
+
+    .events_section .left .align {
+        flex-direction: column;
+    }
+
+    .events_section .event .content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
     }
 }
 

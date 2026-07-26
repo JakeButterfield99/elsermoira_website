@@ -1,3 +1,10 @@
 .blog_section {
     background-color: var(--primary_colour);
+    flex-direction: column;
+    text-align: center;
+    min-height: 60vh;
+}
+
+.blog_section p {
+    width: 75%;
 }
