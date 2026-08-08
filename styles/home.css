@@ -56,6 +56,7 @@
     padding: 2rem 6rem;
     background-color: var(--primary_colour);
     gap: 3rem;
+    align-items: flex-start;
 }
 
 .events_section > div {
@@ -148,8 +149,8 @@
     justify-content: center;
     background-color: var(--accent_colour);
     color: white;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 5px;
 }
 
